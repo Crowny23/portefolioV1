@@ -497,6 +497,9 @@ body{
         transform: translateX(-50%);
         animation: 1s topTitle 1s ease-in-out forwards;
     }
+    & > .imglogo{
+        width: 150px;
+    }
     & > .mail{
         font-size: 26px;
         color: #212121;
@@ -525,7 +528,79 @@ body{
 .btn-return{
     margin: 0 auto;
 }
+// -------Responsive design--------
+@media screen and (max-width: 1000px) {
+    .cursor-circle, #cursor-outer{
+        display: none;
+    }
+    .title::after{
+        font-size: 64px;
+        letter-spacing: -3.3rem;
+    }
+    .welcome{
+        font-size: 64px;
+    }
+    .pres{
+        font-size: 46px;
+    }
+    .hey{
+        width: 90%;
+        height: 700px;
+        &> .skilllike{
+            width: 100%;
+        }
+    }
+    .imgproj{
+        max-width: 300px;
+    }
+    .skillLikeRight{
+        animation: 1s langageLikeTop 2s linear forwards;
+    }
+    .hello{
+        height: 200vh;
+    }
+    .allproj{
+        top: 60%;
+    }
+    .myproj{
+        width: 50%;
+        left: 30%;
+        margin-bottom: 100px;
+        &>.titlePro{
+            width: 80%;
+        }
+        &>.subProj{
+            text-align: center;
+        }
+    }
+    .contact{
+        width: 100vw;
+    }
+}
+
 // --------Animation----------
+@keyframes langageLikeTop {
+    0%{
+        opacity: 0;
+        top: 50%;
+    }
+    50%{
+        opacity: 0.8;
+        top: 100%;
+    }
+    80%{
+        opacity: 0.8;
+        top: 135%;
+        border: 1px solid #212121;
+        box-shadow: 5px 5px 4px 0 rgb(10, 10, 10);
+    }
+    100%{
+        opacity: 1;
+        top: 127%;
+        border: 1px solid #212121;
+        box-shadow: 5px 5px 4px 0 rgb(10, 10, 10);
+    }
+}
 @keyframes lineW {
     0%{
         height: 0;

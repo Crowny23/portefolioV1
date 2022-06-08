@@ -51,10 +51,10 @@ window.addEventListener('scroll', (e)=>{
         lineorange.style.transform = 'translateY('+ Math.ceil(this.scrollY * 0.4 - 400) + 'px)';
         lineblue.style.transform = 'translateY('+ Math.ceil(this.scrollY * 0.4 - 400) +'px)';
         for(let dev of devorange){
-            dev.style.transform = 'translateY('+ Math.ceil(this.scrollY * 0.55 - 400) + 'px)';
+            dev.style.transform = 'translateY('+ Math.ceil(this.scrollY * 0.55 - 600) + 'px)';
         }
         for(let dev of devblue){
-            dev.style.transform = 'translateY('+ Math.ceil(this.scrollY * 0.45 - 400) + 'px)';
+            dev.style.transform = 'translateY('+ Math.ceil(this.scrollY * 0.45 - 600) + 'px)';
         }
     }
     if(this.scrollY > 1200){
